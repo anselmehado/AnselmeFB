@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   #resources :posts
   get 'posts/index'
-  get 'sessions/new'
+  root 'sessions/new'
   resources :posts
   resources :sessions, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create, :show]
