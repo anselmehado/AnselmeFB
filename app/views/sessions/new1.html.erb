@@ -1,6 +1,8 @@
 <h1>Log in</h1>
  <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
 
+  <%= f.password_field :password , :password %>
+
 <center>
 <table cellpadding=2 cellspacing=2 width ="50%"  height="50px" border="3px">
    <tr>
@@ -19,3 +21,7 @@
  </table>
  </center>
  <% end %>
+
+ <%# <%= f.text_field :title, placeholder: "email" %><br>
+ <%= f.text_field :title, placeholder: "password" %> <br>
+  <%= f.submit %> %>
