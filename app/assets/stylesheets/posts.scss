@@ -28,7 +28,8 @@ header {
     justify-content: space-around;/* Alignements des liens dans le menu */
 }
 .menu li {
-    list-style-type: none ;       /* Suppression des puces */
+    list-style-type: none ;
+     text-decoration: none;    /* Suppression des puces */
 
 }
 .menu a {
